@@ -1,0 +1,42 @@
+{
+    "menuItems": [
+      {
+        "id": 1,
+        "name": "Cheese Fries",
+        "description": "delicious cheese fries with cheese, lettuce, and tomato.",
+        "price": 200
+      },
+      {
+        "id": 2,
+        "name": "kebab",
+        "description": "chicken kebab made with beef ,lettuce cheese, and dhania.",
+        "price": 100
+      } ,
+      {
+        "id": 3,
+        "name": "Samosa",
+        "description": "Beef samosas made with beef,coriander,garlic paste and red chilli.",
+        "price": 50
+      }
+    ],
+    "reservations": [
+      {
+        "id": 1,
+        "name": "Hope Mutindi",
+        "date": "2023-04-10",
+        "time": "19:30",
+        "partySize": 6,
+        "contactNumber": "+254 732765647"
+      }  ,
+      {
+        "id": 2,
+        "name": "Jane Munene",
+        "date": "2023-04-11",
+        "time": "20:00",
+        "partySize": 2,
+        "contactNumber": "+254 710344782"
+      }
+    ] 
+    
+}
+  

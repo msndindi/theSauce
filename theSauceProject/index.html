@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant App</title>
+	<!-- CSS styles -->
+
+	<link rel="stylesheet" href="CSS/style.css">
+	<script src="index.js"></script>
+	
+</head>
+<body>
+	<!-- Header section -->
+		<header>
+			<div class="image-container">
+				<img src="images/French fries 🍟.jpeg" alt="French" id="hs" />
+				<div class="text-overlay">
+				  <h2>The Sauce</h2>
+				  <p>TASTE IS ALL WE'VE GOT.</p>
+				</div>
+			  </div>
+			  
+			  <nav>
+				<ul>
+				  <li><a href="#menu">Menu</a></li>
+				  <li><a href="#online-ordering">Online Ordering</a></li>
+				  <li><a href="#reservation">Reservation</a></li>
+				  <li><a href="#contact us">Contact Us</a></li>
+				</ul>
+			  </nav>
+			  
+	    </header>
+	<!-- Hero section -->
+	<section class="hero">
+		<p>Discover our menu and make a reservation</p>
+		<button>Make a Reservation</button>
+	</section>
+	<!-- Menu section -->
+	<section id="menu">
+		<h2>Our Menu</h2>
+		<div class="menu-items">
+			<div class="menu-item">
+				<h3> Cheese Fries</h3>
+				<img src="images/Loaded Cheese Fries _ Recipe _ Queenslee Appétit.jpeg" 
+				alt="cheese fries " id ="fries"/>
+				<span class="price">ksh 200</span>
+			</div>
+	     	<div class="menu-item">
+				<h3>Garlic Fries</h3>
+				<img src="images/Easy Baked Garlic Fries (Oven Fries) - Last Ingredient.jpeg" 
+				alt="Garlic" id ="Garlic"/>
+				<span class="price">ksh 200</span>
+				</div>
+			<div class="menu-item">
+					<h3>Kebab</h3>
+					<img src="images/Easy Authentic Chicken Seekh Kebab Recipe - The Fab Flip.png" 
+				alt="kebab " id ="keba"/>
+					<span class="price">ksh 100</span>
+					</div>
+
+			<div class="menu-item">
+						<h3>Pilau</h3>
+						<img src="images/18 Comfort Foods That People Are Eating Around The World.jpeg" 
+				alt="Pilau" id ="Pilau"/>
+						<span class="price">ksh 250</span>
+					</div>
+			<div class="menu-item">
+						<h3>Samosa</h3>
+						<img src="images/Best Keema Samosa Recipe (Patti Samosa) - Cubes N Juliennes.png" 
+				alt="Samosa " id ="samo"/>
+						<span class="price">ksh 50</span>
+					</div>
+			<div class="menu-item">
+						<h3>Chicken</h3>
+						<img src="images/Cherry on my Sundae.jpeg" 
+				alt="chicken" id ="kuku"/>
+						<span class="price">ksh 1000</span>
+					</div>
+		    <div class="menu-item">
+						<h3>Shawarma</h3>
+						<img src="images/Homemade Chicken Shawarma with Yogurt-Garlic Sauce - Foxy Folksy.jpeg" 
+				alt="chicken roll " id ="shawarma"/>
+						<span class="price">ksh 200</span>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Online Ordering section -->
+	<section id="online-ordering">
+		<h2>Online Ordering</h2>
+		<p>Order from our  online menu</p>
+		<form id="order-form">
+			<label for="menu-item">Select a menu item:</label>
+			<select id="menu-item">
+			  <option value="cheese Fries">Cheese Fries</option>
+			  <option value="chicken">Chicken</option>
+			  <option value="samosa">Samosa</option>
+			  <option value="pilau">Pilau</option>
+			  <option value="kebab">Kebab</option>
+			</select>
+			<button type="button" id="add-to-cart">Add to Cart</button>
+		  </form>
+		  <div id="cart">
+			<h2>Cart</h2>
+			<ul id="cart-items"></ul>
+			<p id="cart-total">Total: ksh0.00</p>
+			<button type="button" id="checkout">Checkout</button>
+		  </div>
+		  		
+	</section>
+	<!-- Reservations section -->
+	<section id="reservations">
+		<h2>Reservations</h2>
+		<p>Make a reservation to secure your table</p>
+
+		<form>
+			<div style="display: flex; flex-wrap: wrap;">
+			  <div style="flex-basis: 50%; padding-right: 10px;">
+				<label>First Name:</label>
+				<input type="text" name="first-name">
+			  </div>
+			  <div style="flex-basis: 50%; padding-left: 10px;">
+				<label>Last Name:</label>
+				<input type="text" name="last-name">
+			  </div>
+			  <div style="flex-basis: 50%; padding-right: 10px;">
+				<label>Email:</label>
+				<input type="email" name="email">
+			  </div>
+			  <div style="flex-basis: 50%; padding-left: 10px;">
+				<label>Reservation Date:</label>
+				<input type="date" name="reservation-date">
+			  </div>
+			  <div style="flex-basis: 50%; padding-right: 10px;">
+				<label>Reservation Time:</label>
+				<input type="time" name="reservation-time">
+			  </div>
+			  <div style="flex-basis: 50%; padding-left: 10px;">
+				<label>Number of Guests:</label>
+				<input type="number" name="num-guests" min="1">
+			  </div>
+			  <div style="flex-basis: 100%; text-align: center;">
+				<input type="submit" value="Make Reservation">
+			  </div>
+			</div>
+		  </form>
+		  
+
+		  
+	</section>
+	<!-- Contact section -->
+	<section id="contact-section">
+		<h2>Contact Us</h2>
+		<ul class="contact-list"></ul>
+		<p>For reservations or inquiries, please contact us:</p>
+		<ul>
+		  <li><i class="fas fa-phone"></i> Phone: (+254) 755159999</li>
+		  <li><i class="fas fa-envelope"></i> Email: thesauce@outlook.com</li>
+		  <li><i class="fas fa-map-marker-alt"></i> Address: Balozi Road, Kitengela, Kajiado</li>
+		</ul>
+		<form class="contact-form">
+		  <h3>Contact Form</h3>
+		  <input type="text" placeholder="Name">
+		  <input type="email" placeholder="Email">
+		  <textarea placeholder="Message"></textarea>
+		  <button type="submit">Submit</button>
+		</form>
+	  </section>
+	  
+		<div id="map container">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4660479978475!2d36.96282171432586!3d-1.491782198912062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f9f86279f3fff%3A0x8fc33c2293d2ac58!2sBalozi%20Road%2C%20Kitengela!5e0!3m2!1sen!2ske!4v1681224945453!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+			referrerpolicy="no-referrer-when-downgrade"></iframe>"
+		</div>
+	</section>
+	
+			
